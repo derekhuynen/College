@@ -15,4 +15,10 @@ public enum Major {
     Major (String name) {
         this.name = name;
     }
+
+
+    @Override
+    public String toString() {
+        return String.format("Major: %s", this.name);
+    }
 }

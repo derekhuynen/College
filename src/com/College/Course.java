@@ -1,15 +1,18 @@
 package com.College;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Course {
     private String courseName;
     Major major;
     private Teacher teacher;
     private ArrayList<Student> students;
+    private HashMap<Student,Grade> grades;
 
 
-    public Course( String s){
+
+    public Course(){
 
     }
 

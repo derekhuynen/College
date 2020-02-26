@@ -1,11 +1,12 @@
 package com.College;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student implements Person{
     private String firstName;
     private String lastName;
-    private ArrayList<Course> courses;
+    private HashMap<Course,Grade> FinishedCourses;
+    private HashMap<Course,Grade> currentCourses;
 
 
 
@@ -26,13 +27,6 @@ public class Student implements Person{
         return this.lastName;
     }
 
-    public ArrayList<Course> getCourses() {
-        return courses;
-    }
-
-    public void addCourse(Course course){
-        this.courses.add(course);
-    }
 
     @Override
     public String toString() {
